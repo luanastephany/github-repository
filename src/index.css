@@ -60,7 +60,7 @@ body {
 }
 
 /*----------*/
-/* Repositório */
+/* Título e descrição do repositório */
 .app .repositories {
   display: flex;
   flex-direction: column;
@@ -76,4 +76,46 @@ body {
   background-color: white;
   border-radius: 16px;
   border: 1px solid #e1e4e8;
+}
+
+.app .repositories .repository .title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #24292e;
+}
+
+.app .repositories .repository .title:hover {
+  color: #0366d6;
+  cursor: pointer;
+}
+
+.app .repositories .repository .description {
+  display: flex;
+  font-size: 14px;
+  color: #586069;
+  margin: 8px 0;
+}
+
+/*----------*/
+/*Info do repositório*/
+.app .repositories .repository .info {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: 500;
+  color: #586069;
+  align-items: center;
+  gap: 20px;
+}
+
+.app .repositories .repository .info .stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.app .repositories .repository .info .stars:hover {
+  color: #0366d6;
+  cursor: pointer;
 }
