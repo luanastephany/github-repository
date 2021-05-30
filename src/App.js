@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { FaGithub } from 'react-icons/fa'
+import Repository from './Repository'
+
+const items = [0, 0, 0, 0]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header>
+        <FaGithub color="white" size={32} />
+        <input type="text" placeholder="Digite o nome do usuário" />
+        <button>Search</button>
       </header>
+
+      <div className="repositories">
+        <Repository />
+        <Repository />
+        <Repository />
+        <Repository />
+      </div>
+
     </div>
   );
 }
 
 export default App;
+
