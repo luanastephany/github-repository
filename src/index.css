@@ -33,6 +33,7 @@ body {
   height: 62px;
   width: 100%;
   background-color: #24292e;
+  position: fixed;
 }
 
 .app header input {
@@ -62,16 +63,26 @@ body {
 /*----------*/
 /* Título e descrição do repositório */
 .app .repositories {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-direction: column;
   gap: 16px;
   flex: 1;
   padding: 16px 34px;
-  
+  padding-top: 78px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.app .repositories img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .app .repositories .repository {
-  width: 550px;
+  width: 100%;
   padding: 20px 16px;
   background-color: white;
   border-radius: 16px;
